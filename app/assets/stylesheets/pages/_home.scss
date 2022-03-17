@@ -1,0 +1,205 @@
+// Specific CSS for your home-page
+
+h1 {
+  color: $custom-yellow;
+  font-size: 43px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  padding-top: 20px;
+}
+
+.assurance {
+  color: #ffff !important;
+}
+
+.btn-flat-home {
+  //color: white;
+  font: bold;
+  padding: 8px 24px;
+  border-radius: 5px;
+  background: #FFD988;
+  transition: background 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-flat-home:hover {
+
+  background: #FEC52E;
+
+  color: white;
+  width: 100%;
+}
+
+.banner_home {
+  background-size: cover;
+  background-position: center;
+  padding: 160px 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.45)
+    rgba(0, 0, 0, 0.45)
+  )
+}
+
+.banner_home h1 {
+  margin: 0;
+  color: $custom-yellow;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.banner_home p {
+  font-size: 25px;
+  color: #515A63;
+  opacity: .7;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.comment_title {
+  color: $custom-yellow;
+  font: bold;
+  margin-left: 30px;
+}
+.comment_text {
+  color: #515A63;
+  font-size: small;
+  margin-left: 30px;
+}
+
+.cars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.cars-category {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-size: 34px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  &:hover p {
+    color: $custom-yellow;
+  }
+}
+
+.cars {
+  margin: 30px;
+}
+
+p {
+  color: #515A63;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #515A63 !important;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.city {
+  color: #515A63;
+  width: 22% ;
+  padding: 60px;
+  border-radius: 5px;
+  //color: white;
+  background-size: cover;
+  font-size: 25px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.row-cities {
+  justify-content: space-between;
+}
+
+.cities{
+  text-align: center;
+  color: $custom-yellow !important;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 90px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 40px;
+}
+
+.container-cities {
+  align-items: center;
+  flex-grow: 1;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+.container-cities-2 {
+  align-items: center;
+  flex-grow: 1;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.car-app {
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+
+  .cars-app {
+
+    padding: 20px;
+  }
+
+  .img-car {
+    height: auto;
+    background-image: url(https://image.shutterstock.com/image-vector/location-maps-online-application-vector-260nw-1363873922.jpg);
+    width: 60%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    margin-left: 120px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  }
+
+  .d-flex {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: C4C4C4;
+  }
+
+  .mb-3-bis {
+    width: 50%;
+    margin: 0 auto;
+  }

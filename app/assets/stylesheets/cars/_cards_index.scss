@@ -1,0 +1,165 @@
+/* Mohave & Open Sans Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300;700&family=Open+Sans&display=swap");
+
+/* Fonts & Colors */
+:root {
+	--title-font: "Mohave", sans-serif;
+	--body-font: "Open Sans", sans-serif;
+	--orange: hsl(0, 100%, 65%);
+	--lighter-orange: hsl(0, 100%, 77%);
+	--grey: hsl(197, 3%, 46%);
+	--dark: hsl(0, 0%, 16%);
+	//--white: hsl(0, 0%, 100%);
+}
+
+/* General */
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+::selection {
+	background-color: var(--lighter-orange);
+	color: var(--white);
+}
+
+.cars-index {
+
+  h2 {
+    color: black;
+  }
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Layout */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Typography */
+  .card_title {
+    font-family: var(--title-font);
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .card_text p {
+    font-family: var(--body-font);
+    color : black;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  /* Utilities */
+  .orange {
+    color: #FEC52E;
+  }
+
+  .note-sm {
+    color: var(--grey);
+    font-family: var(--title-font);
+    font-size: 14px;
+  }
+
+  /* Components */
+  .cards {
+    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+
+    &_item {
+      display: flex;
+      padding: 1rem;
+    }
+  }
+
+  .card {
+    //background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 48vh;
+
+    .card_content {
+      padding: 26px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 65%;
+    }
+
+    &_title {
+      margin-bottom: 5px;
+      width: 100%;
+    }
+
+    &_text {
+      margin: 16px 0;
+      width: 100%;
+    }
+    .card_image {
+      height: 35%;
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  .btn-valider {
+    margin-top:  5px;
+    background-color: #FFD988;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .btn-valider:hover {
+    background-color: #FEC52E;
+    color:white;
+  }
+
+  .cards_item {
+    height: 350px;
+  }
+
+  /* Media queries */
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+}

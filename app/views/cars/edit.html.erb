@@ -1,0 +1,21 @@
+<h1>Cars#edit</h1>
+
+<div class="container">
+  <%= form_for(@car) do |f| %>
+    <%= f.label "Enter le modèle" %>
+    <%= f.text_field :model %>
+    <%= f.label "Date de production" %>
+    <%= f.text_field :date_of_production %>
+    <%= f.label "Enérgie" %>
+    <%= f.text_field :engine %>
+    <%= f.label "Transmission" %>
+    <%= f.text_field :transmission %>
+    <%= f.label "Kilometrage" %>
+    <%= f.text_field :number_of_miles %>
+    <%= f.label "Type de vehicule" %>
+    <%= f.text_field :type_car %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+  <%= link_to "Vehicules", cars_path, class: "btn btn-primary padding-top= 5rem" %>

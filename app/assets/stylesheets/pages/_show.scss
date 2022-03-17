@@ -1,0 +1,111 @@
+.card-product {
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: rgba(230, 230, 230, 0.7);
+  margin-left: 0;
+  border-radius: 10px;
+  color: black;
+}
+
+.card-product img {
+  width: 500px;
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-product h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 20px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.btn {
+  margin-top:  5px;
+  background-color: #FFD988;
+  color: white;
+  border: none;
+  font-size: 30px;
+  font-family: 'Nunito';
+}
+
+.btn:hover {
+  background-color: $custom-yellow;
+  color:white;
+}
+
+.background {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  position: relative;
+}
+
+#back-btn {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-2 {
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: fit-content;
+  width: 300px;
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+.form {
+  color:blue;
+  background-color: antiquewhite;
+}
+
+.icon {
+  width: 45px;
+  margin-left: 70px;
+  margin-top: 10px;
+
+}
+
+
+.card-product-infos ul {
+  font-family: 'Nunito', sans-serif;
+}
+.btn1 {
+margin-top: 10px;
+background-color: #FFD988;
+color: white;
+}
+
+.btn1:hover {
+  background-color: $custom-yellow;
+  color:white;
+
+}
+
+#map canvas {
+  border-radius: 10px;
+}

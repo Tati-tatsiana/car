@@ -1,0 +1,90 @@
+<div class="banner_home" style="background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://www.camelcar.com/images/slide-2.jpg);">
+  <div class="container">
+    <h1>EasyDrive, louez <strong>facile,</strong> louez <strong>rapide </strong>!</h1>
+
+    <p class="assurance"> La voiture de vos rêve a porté de clic 24h/24.<br>Location de voiture en partenariat avec AllianZ & Groupama.</p>
+
+    <div class="mb-3">
+
+          <%= form_tag cars_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Adresse précise, gare, métro, aéroport..."
+      %>
+      <%= submit_tag "Lancez votre recherche", class: "btn btn-flat-home" %>
+    <% end %>
+    </div>
+  </div>
+</div>
+
+
+<div class="d-flex">
+  <div class="">
+    <h2>Voici la nouvelle manière de louer une voiture</h2>
+    <p class="comment_title">Louez pour une heure ou pour plusieurs jours</p>
+    <p class="comment_text">Un prix adapté pour chaque trajet</p>
+    <br>
+    <p class="comment_title">Gérez tout depuis l’application</p>
+    <p class="comment_text">Réservation, ouverture et fermeture du véhicule</p>
+    <br>
+    <p class="comment_title">Des voitures près de chez vous</p>
+    <p class="comment_text">Des milliers de voitures en France</p>
+  </div>
+  <div class="img-car" style="background-image: url(https://img.freepik.com/vecteurs-libre/concept-application-taxi-illustre_23-2148512171.jpg?size=626&ext=jpg)">
+  </div>
+</div>
+
+  <div class="cars">
+
+    <%= link_to cars_path(type_car: "Citadine") do %>
+      <div class="cars-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.avem.fr/wp-content/uploads/2021/04/500BEV-Hatchback-BodiesSelection-FIgurino-Desktop-380x242-1.png)">
+        <p>Citadine</p>
+      </div>
+    <% end %>
+
+    <%= link_to cars_path(type_car: "Berline") do %>
+      <div class="cars-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://imgd.aeplcdn.com/1200x900/n/cw/ec/47336/e-class-exterior-right-front-three-quarter.jpeg?q=75)">
+        <p>Berline</p>
+      </div>
+    <% end %>
+
+    <%= link_to cars_path(type_car: "S.U.V") do %>
+      <div class="cars-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cloudfront-eu-central-1.images.arcpublishing.com/leparisien/P7CH3BP4X3EJZLLTLBJPX5NWSY.jpg)">
+        <p>4X4</p>
+      </div>
+    <% end %>
+  </div>
+
+<div class="mb-3-bis">
+
+<h2 class="cities">Trouvez votre véhicule partout en France</h2>
+
+          <%= form_tag cars_path, method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Adresse précise, gare, métro, aéroport..."
+      %>
+      <%= submit_tag "Lancez votre recherche", class: "btn btn-flat-home" %>
+    <% end %>
+    </div>
+
+
+
+<div class="container-cities">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cities">
+    <div class="city" style="background-image: url(https://www.tbs-education.fr/content/uploads/sites/4/cache/2021/07/tbs-paris/2845883344.jpg)">Paris</div>
+    <div class="city" style="background-image: url(https://www.toulouse-tourisme.com/sites/www.toulouse-tourisme.com/files/styles/incontournable_hp/public/thumbnails/image/incontournables_toulouse.jpg?itok=iI-TWLoM)">Toulouse</div>
+    <div class="city" style="background-image: url(https://media.lesechos.com/api/v1/images/view/614442d98fe56f656148bf27/1280x720/0611653626226-web-tete.jpg)">Lyon</div>
+    <div class="city" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9c/Bordeaux_%282418988310%29.jpg)">Bordeaux</div>
+  </div>
+</div>
+<div class="container-cities-2">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cities">
+    <div class="city" style="background-image: url(https://a.cdn-hotels.com/gdcs/production38/d729/6936f5b9-b57d-40e5-ac83-97bf448d6cf3.jpg?impolicy=fcrop&w=800&h=533&q=medium)">Montpellier</div>
+    <div class="city" style="background-image: url(https://a.cdn-hotels.com/gdcs/production14/d1589/9b2a4ed0-8f10-11e8-a0da-0242ac11004d.jpg)">Marseille</div>
+    <div class="city" style="background-image: url(https://static.actu.fr/uploads/2020/03/grand-place-lille-fontaine-854x640.jpeg)">Lille</div>
+    <div class="city" style="background-image: url(https://static.actu.fr/uploads/2021/10/43f71a327271697f71a327271fbf71v.jpg)">Nantes</div>
+  </div>
+</div>
